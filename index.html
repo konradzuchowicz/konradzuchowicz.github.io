@@ -7,7 +7,7 @@
     <!-- Pre v1.0.0 versions need the minified css -->
     <!-- <link rel='stylesheet' href='https://unpkg.com/v-calendar/lib/v-calendar.min.css'> -->
   </head>
-  <body>
+  <body style="background-image: url('https://pixabay.com/get/g05ee9c311966c8460a5857881bc6fb7f2c9cb502f42a6f9064a85141a24853d1d552ab6c7be89163dd44cadcf6cb4904_1920.jpg')">
     <pre>
      
      
@@ -20,7 +20,7 @@
 	 
 	 
     </pre>
-    <div id='app'>
+    <div id='app' style="width: 800px; margin:0 auto;">
 		<v-calendar 
 			:attributes='attrs' 
 			:columns="$screens({ default: 1, lg: 3 })"
@@ -58,6 +58,16 @@
             new Date(2021, 1, 20), // Jan 10th
             new Date(2021, 1, 21), // Jan 22nd
 			{ start: new Date(2021, 3, 1), end: new Date(2021, 3, 31) },
+          ],
+        },
+		{
+          key: 'Wstępna rezerwacja',
+          highlight: 'blue',
+          dates: [
+            new Date(2021, 5, 13), // Jan 1st
+            new Date(2021, 5, 20), // Jan 10th
+            new Date(2021, 5, 21), // Jan 22nd
+			{ start: new Date(2021, 6, 2), end: new Date(2021, 6, 7) },
           ],
         },
       ],
